@@ -1,0 +1,15 @@
+C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.DataModel\bin\Debug\Learn.DataModel.dll.config
+C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.DataModel\bin\Debug\Learn.DataModel.dll
+C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.DataModel\bin\Debug\Learn.DataModel.pdb
+C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.DataModel\bin\Debug\EntityFramework.dll
+C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.DataModel\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.DataModel\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.DataModel\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.DataModel\bin\Debug\EntityFramework.xml
+C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.DataModel\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.DataModel\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.DataModel\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.DataModel\obj\Debug\Learn.DataModel.csproj.CoreCompileInputs.cache
+C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.DataModel\obj\Debug\Learn.DataModel.dll
+C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.DataModel\obj\Debug\Learn.DataModel.pdb
+C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.DataModel\obj\Debug\Learn.DataModel.csprojResolveAssemblyReference.cache
