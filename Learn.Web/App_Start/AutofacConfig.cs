@@ -24,7 +24,7 @@ namespace Learn
         private static void SetAutofacContainer()
         {
             var builder = new ContainerBuilder();
-            builder.RegisterControllers(Assembly.GetExecutingAssembly());
+            //builder.RegisterControllers(Assembly.GetExecutingAssembly());
             builder.RegisterType<UnitOfWork>().As<IUnitOfWork>().InstancePerHttpRequest();
             builder.RegisterType<DatabaseFactory>().As<IDatabaseFactory>().InstancePerHttpRequest();
             builder.RegisterAssemblyTypes(typeof(NoteRepository).Assembly)
