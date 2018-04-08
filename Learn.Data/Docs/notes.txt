@@ -22,3 +22,7 @@ Microsoft.Owin.Host.SystemWeb
 
  //lib
 web identity
+
+
+//git
+https://github.com/casparchanslife/basic_project.git
