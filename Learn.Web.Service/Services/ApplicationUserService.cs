@@ -4,13 +4,14 @@ using Learn.DataModel.Models;
 using Learn.Core;
 using Learn.Lib.Infrastructure.Interface;
 using Learn.Data.Repositories.Interface;
+using System.Threading.Tasks;
 
 namespace Learn.Service
 {
 
     public interface IApplicationUserService
     {
-       ApplicationUser GetUser(string userId);
+        Task<ApplicationUser> GetUser(string userId);
        void SaveUser();
     }
 
@@ -27,10 +28,9 @@ namespace Learn.Service
 
         #region IUserService Members
 
-        public ApplicationUser GetUser(string userId)
+        public async Task<ApplicationUser> GetUser(string userId)
         {
-            //return applicationUserRepository.Get(u => u== userId);
-            return null;
+            return await applicationUserRepository.GetUserById(userId);
         }
         
        public void SaveUser()

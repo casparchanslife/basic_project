@@ -19,5 +19,18 @@ namespace Learn.Data
             base.SaveChanges();
         }
 
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<ApplicationUser>()
+                .HasOptional(a => a.UpdatedBy)
+                .WithMany()
+                .HasForeignKey(a => a.UpdatedById);
+            modelBuilder.Entity<ApplicationUser>()
+                .HasOptional(a => a.CreatedBy)
+                .WithMany()
+                .HasForeignKey(a => a.CreatedById);
+        }
     }
 }

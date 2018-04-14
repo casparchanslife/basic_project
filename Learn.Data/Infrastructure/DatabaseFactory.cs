@@ -15,7 +15,6 @@ namespace Learn.Data.Infrastructure
             if (dataContext != null)
             {
                 dataContext.Dispose();
-
             }
         }
     }

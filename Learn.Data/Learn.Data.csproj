@@ -95,6 +95,18 @@
     <Compile Include="Migrations\201804031759185_initial.Designer.cs">
       <DependentUpon>201804031759185_initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804101717339_aspnetuser_add_modelbase_fields.cs" />
+    <Compile Include="Migrations\201804101717339_aspnetuser_add_modelbase_fields.Designer.cs">
+      <DependentUpon>201804101717339_aspnetuser_add_modelbase_fields.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804101741044_aspnetuser_add_modelbase_fields1.cs" />
+    <Compile Include="Migrations\201804101741044_aspnetuser_add_modelbase_fields1.Designer.cs">
+      <DependentUpon>201804101741044_aspnetuser_add_modelbase_fields1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804101745230_aspnetuser_add_modelbase_fields2.cs" />
+    <Compile Include="Migrations\201804101745230_aspnetuser_add_modelbase_fields2.Designer.cs">
+      <DependentUpon>201804101745230_aspnetuser_add_modelbase_fields2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Repositories\Interface\IApplicationUserRepository.cs" />
     <Compile Include="Repositories\Interface\INoteRepository.cs" />
     <Compile Include="Infrastructure\Interface\IRepository.cs" />
@@ -130,6 +142,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201804031759185_initial.resx">
       <DependentUpon>201804031759185_initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804101717339_aspnetuser_add_modelbase_fields.resx">
+      <DependentUpon>201804101717339_aspnetuser_add_modelbase_fields.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804101741044_aspnetuser_add_modelbase_fields1.resx">
+      <DependentUpon>201804101741044_aspnetuser_add_modelbase_fields1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804101745230_aspnetuser_add_modelbase_fields2.resx">
+      <DependentUpon>201804101745230_aspnetuser_add_modelbase_fields2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

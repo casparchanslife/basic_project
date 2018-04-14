@@ -65,3 +65,6 @@ C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Data\obj
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Data\obj\Debug\Learn.Data.pdb
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Data\obj\Debug\Learn.Data.Migrations.initial.resources
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Data\obj\Debug\Learn.Data.csproj.GenerateResource.Cache
+C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Data\obj\Debug\Learn.Data.Migrations.aspnetuser_add_modelbase_fields.resources
+C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Data\obj\Debug\Learn.Data.Migrations.aspnetuser_add_modelbase_fields1.resources
+C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Data\obj\Debug\Learn.Data.Migrations.aspnetuser_add_modelbase_fields2.resources

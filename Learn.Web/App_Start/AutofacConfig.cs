@@ -1,17 +1,14 @@
 ﻿using System.Web.Mvc;
 using Autofac;
-using System.Reflection;
-using Microsoft.AspNet.Identity.EntityFramework;
-using Microsoft.AspNet.Identity;
 using Autofac.Integration.Mvc;
 using Learn.Data.Infrastructure;
 using Learn.Lib.Infrastructure.Interface;
 using Learn.Data.Infrastructure.Interface;
 using Learn.Lib.Infrastructure.Repositories;
 using Learn.Web.Service.Services;
-using Learn.Data;
-using Learn.DataModel.Models;
 using Learn.Web;
+using Learn.Data.Repositories;
+using Learn.Service;
 
 namespace Learn
 {
@@ -31,13 +28,21 @@ namespace Learn
                    .Where(t => t.Name.EndsWith("Repository"))
                    .AsImplementedInterfaces()
                    .InstancePerHttpRequest();
+            builder.RegisterAssemblyTypes(typeof(ApplicationUserRepository).Assembly)
+                   .Where(t => t.Name.EndsWith("Repository"))
+                   .AsImplementedInterfaces()
+                   .InstancePerHttpRequest();
             builder.RegisterAssemblyTypes(typeof(NoteService).Assembly)
                    .Where(t => t.Name.EndsWith("Service"))
                    .AsImplementedInterfaces()
                    .InstancePerHttpRequest();
-
+            builder.RegisterAssemblyTypes(typeof(ApplicationUserService).Assembly)
+                   .Where(t => t.Name.EndsWith("Service"))
+                   .AsImplementedInterfaces()
+                   .InstancePerHttpRequest();
             builder.RegisterControllers(typeof(MvcApplication).Assembly)
              .InstancePerHttpRequest();
+
             //builder.Register(c => new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(new ApplicationDbContext())))
             //    .As<UserManager<ApplicationUser>>().InstancePerHttpRequest();
 

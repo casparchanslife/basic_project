@@ -269,3 +269,6 @@ C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Web\bin\
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Web\bin\Microsoft.Practices.Unity.Interception.xml
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Web\obj\Debug\Learn.Web.dll
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Web\obj\Debug\Learn.Web.pdb
+C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Web\bin\Learn.Web.Core.dll
+C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Web\bin\Learn.Web.Core.pdb
+C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Web\bin\Learn.Web.Core.dll.config

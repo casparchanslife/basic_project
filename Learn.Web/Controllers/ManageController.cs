@@ -5,8 +5,8 @@ using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
-using Learn.Web.Manager;
 using Learn.Web.Models.ViewModels;
+using Learn.Web.Core.Manager;
 
 namespace Learn.Web.Controllers
 {
