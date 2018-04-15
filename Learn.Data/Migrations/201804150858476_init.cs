@@ -3,7 +3,7 @@ namespace Learn.Data.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class initial : DbMigration
+    public partial class init : DbMigration
     {
         public override void Up()
         {
@@ -30,6 +30,11 @@ namespace Learn.Data.Migrations
                 c => new
                     {
                         Id = c.String(nullable: false, maxLength: 128),
+                        Status = c.String(maxLength: 1),
+                        CreateDate = c.DateTime(nullable: false),
+                        CreatedById = c.String(maxLength: 128),
+                        UpdateDate = c.DateTime(nullable: false),
+                        UpdatedById = c.String(maxLength: 128),
                         Email = c.String(maxLength: 256),
                         EmailConfirmed = c.Boolean(nullable: false),
                         PasswordHash = c.String(),
@@ -43,6 +48,10 @@ namespace Learn.Data.Migrations
                         UserName = c.String(nullable: false, maxLength: 256),
                     })
                 .PrimaryKey(t => t.Id)
+                .ForeignKey("dbo.AspNetUsers", t => t.CreatedById)
+                .ForeignKey("dbo.AspNetUsers", t => t.UpdatedById)
+                .Index(t => t.CreatedById)
+                .Index(t => t.UpdatedById)
                 .Index(t => t.UserName, unique: true, name: "UserNameIndex");
             
             CreateTable(
@@ -89,6 +98,8 @@ namespace Learn.Data.Migrations
                     {
                         Id = c.String(nullable: false, maxLength: 128),
                         Name = c.String(nullable: false, maxLength: 256),
+                        Description = c.String(maxLength: 30),
+                        Discriminator = c.String(nullable: false, maxLength: 128),
                     })
                 .PrimaryKey(t => t.Id)
                 .Index(t => t.Name, unique: true, name: "RoleNameIndex");
@@ -100,8 +111,10 @@ namespace Learn.Data.Migrations
             DropForeignKey("dbo.AspNetUserRoles", "RoleId", "dbo.AspNetRoles");
             DropForeignKey("dbo.Note", "UpdatedBy_Id", "dbo.AspNetUsers");
             DropForeignKey("dbo.Note", "CreatedBy_Id", "dbo.AspNetUsers");
+            DropForeignKey("dbo.AspNetUsers", "UpdatedById", "dbo.AspNetUsers");
             DropForeignKey("dbo.AspNetUserRoles", "UserId", "dbo.AspNetUsers");
             DropForeignKey("dbo.AspNetUserLogins", "UserId", "dbo.AspNetUsers");
+            DropForeignKey("dbo.AspNetUsers", "CreatedById", "dbo.AspNetUsers");
             DropForeignKey("dbo.AspNetUserClaims", "UserId", "dbo.AspNetUsers");
             DropIndex("dbo.AspNetRoles", "RoleNameIndex");
             DropIndex("dbo.AspNetUserRoles", new[] { "RoleId" });
@@ -109,6 +122,8 @@ namespace Learn.Data.Migrations
             DropIndex("dbo.AspNetUserLogins", new[] { "UserId" });
             DropIndex("dbo.AspNetUserClaims", new[] { "UserId" });
             DropIndex("dbo.AspNetUsers", "UserNameIndex");
+            DropIndex("dbo.AspNetUsers", new[] { "UpdatedById" });
+            DropIndex("dbo.AspNetUsers", new[] { "CreatedById" });
             DropIndex("dbo.Note", new[] { "UpdatedBy_Id" });
             DropIndex("dbo.Note", new[] { "CreatedBy_Id" });
             DropTable("dbo.AspNetRoles");

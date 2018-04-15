@@ -50,9 +50,9 @@ namespace Learn.Web.Areas.Admin.Controllers
         public  ActionResult Create(NoteViewModel createNote)
         {
             var note = Mapper.Map<NoteViewModel, Note>(createNote);
-            //var currentUser = UserManager.FindById(User.Identity.GetUserId());
-            //note.CreatedBy = currentUser;
-            //note.UpdatedBy = currentUser;
+            var currentUser = UserManager.FindById(User.Identity.GetUserId());
+            note.CreatedBy = currentUser;
+            note.UpdatedBy = currentUser;
             IEnumerable<ValidationResult> errors = noteService.CanAddNote(note);
             ModelState.AddModelErrors(errors);
             if (ModelState.IsValid)

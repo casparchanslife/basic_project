@@ -17,8 +17,8 @@ namespace Learn.Web.Areas.Notes
             context.MapRoute(
                 "Admin_default",
                 "Admin/{controller}/{action}/{id}",
-                new {action = "Index", id = UrlParameter.Optional }
-                ,namespaces: new[] { "Learn.Web.Areas.Admin.Controllers" }
+                new {action = "Index", id = UrlParameter.Optional },
+                namespaces: new[] { "Learn.Web.Areas.Admin.Controllers" }
             );
         }
     }

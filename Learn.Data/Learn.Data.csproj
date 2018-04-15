@@ -91,21 +91,17 @@
     <Compile Include="Infrastructure\Interface\IDatabaseFactory.cs" />
     <Compile Include="Infrastructure\Interface\IUnitOfWork.cs" />
     <Compile Include="Infrastructure\Page.cs" />
-    <Compile Include="Migrations\201804031759185_initial.cs" />
-    <Compile Include="Migrations\201804031759185_initial.Designer.cs">
-      <DependentUpon>201804031759185_initial.cs</DependentUpon>
+    <Compile Include="Migrations\201804150858476_init.cs" />
+    <Compile Include="Migrations\201804150858476_init.Designer.cs">
+      <DependentUpon>201804150858476_init.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201804101717339_aspnetuser_add_modelbase_fields.cs" />
-    <Compile Include="Migrations\201804101717339_aspnetuser_add_modelbase_fields.Designer.cs">
-      <DependentUpon>201804101717339_aspnetuser_add_modelbase_fields.cs</DependentUpon>
+    <Compile Include="Migrations\201804150922262_fmk.cs" />
+    <Compile Include="Migrations\201804150922262_fmk.Designer.cs">
+      <DependentUpon>201804150922262_fmk.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201804101741044_aspnetuser_add_modelbase_fields1.cs" />
-    <Compile Include="Migrations\201804101741044_aspnetuser_add_modelbase_fields1.Designer.cs">
-      <DependentUpon>201804101741044_aspnetuser_add_modelbase_fields1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201804101745230_aspnetuser_add_modelbase_fields2.cs" />
-    <Compile Include="Migrations\201804101745230_aspnetuser_add_modelbase_fields2.Designer.cs">
-      <DependentUpon>201804101745230_aspnetuser_add_modelbase_fields2.cs</DependentUpon>
+    <Compile Include="Migrations\201804150924509_update_fmk_role.cs" />
+    <Compile Include="Migrations\201804150924509_update_fmk_role.Designer.cs">
+      <DependentUpon>201804150924509_update_fmk_role.cs</DependentUpon>
     </Compile>
     <Compile Include="Repositories\Interface\IApplicationUserRepository.cs" />
     <Compile Include="Repositories\Interface\INoteRepository.cs" />
@@ -140,17 +136,14 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201804031759185_initial.resx">
-      <DependentUpon>201804031759185_initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201804150858476_init.resx">
+      <DependentUpon>201804150858476_init.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201804101717339_aspnetuser_add_modelbase_fields.resx">
-      <DependentUpon>201804101717339_aspnetuser_add_modelbase_fields.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201804150922262_fmk.resx">
+      <DependentUpon>201804150922262_fmk.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201804101741044_aspnetuser_add_modelbase_fields1.resx">
-      <DependentUpon>201804101741044_aspnetuser_add_modelbase_fields1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201804101745230_aspnetuser_add_modelbase_fields2.resx">
-      <DependentUpon>201804101745230_aspnetuser_add_modelbase_fields2.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201804150924509_update_fmk_role.resx">
+      <DependentUpon>201804150924509_update_fmk_role.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

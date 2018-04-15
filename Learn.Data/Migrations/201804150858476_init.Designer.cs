@@ -7,13 +7,13 @@ namespace Learn.Data.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.0-30225")]
-    public sealed partial class aspnetuser_add_modelbase_fields2 : IMigrationMetadata
+    public sealed partial class init : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(aspnetuser_add_modelbase_fields2));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(init));
         
         string IMigrationMetadata.Id
         {
-            get { return "201804101745230_aspnetuser_add_modelbase_fields2"; }
+            get { return "201804150858476_init"; }
         }
         
         string IMigrationMetadata.Source

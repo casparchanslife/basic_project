@@ -8,6 +8,10 @@ namespace Learn.Data
     {
         public ApplicationDbContext() : base("Name=MainDbContext") { }
 
+        public DbSet<fmk_function> fmk_function { get; set; }
+        public DbSet<fmk_function_group> fmk_function_group { get; set; }
+        public DbSet<fmk_function_role> fmk_function_role { get; set; }
+
         public DbSet<Note> Note { get; set; }
 
         public static ApplicationDbContext Create()

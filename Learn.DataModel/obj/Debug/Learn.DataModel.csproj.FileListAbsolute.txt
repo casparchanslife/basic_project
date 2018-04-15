@@ -12,3 +12,4 @@ C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.DataMode
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.DataModel\obj\Debug\Learn.DataModel.csproj.CoreCompileInputs.cache
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.DataModel\obj\Debug\Learn.DataModel.dll
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.DataModel\obj\Debug\Learn.DataModel.pdb
+C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.DataModel\obj\Debug\Learn.DataModel.csprojResolveAssemblyReference.cache
