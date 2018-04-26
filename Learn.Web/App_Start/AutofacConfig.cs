@@ -9,6 +9,13 @@ using Learn.Web.Service.Services;
 using Learn.Web;
 using Learn.Data.Repositories;
 using Learn.Service;
+using Learn.Data;
+using Learn.Web.Core.Manager;
+using Microsoft.AspNet.Identity.EntityFramework;
+using Microsoft.AspNet.Identity.Owin;
+using Learn.DataModel.Models;
+using System.Web;
+using Microsoft.Owin.Security;
 
 namespace Learn
 {
@@ -21,7 +28,7 @@ namespace Learn
         private static void SetAutofacContainer()
         {
             var builder = new ContainerBuilder();
-            //builder.RegisterControllers(Assembly.GetExecutingAssembly());
+
             builder.RegisterType<UnitOfWork>().As<IUnitOfWork>().InstancePerHttpRequest();
             builder.RegisterType<DatabaseFactory>().As<IDatabaseFactory>().InstancePerHttpRequest();
             builder.RegisterAssemblyTypes(typeof(NoteRepository).Assembly)
@@ -40,13 +47,27 @@ namespace Learn
                    .Where(t => t.Name.EndsWith("Service"))
                    .AsImplementedInterfaces()
                    .InstancePerHttpRequest();
+
+            builder.RegisterType<ApplicationDbContext>().AsSelf().InstancePerRequest();
+            builder.Register(c => new UserStore<ApplicationUser>(c.Resolve<ApplicationDbContext>())).AsImplementedInterfaces().InstancePerRequest();
+            builder.Register(c => new RoleStore<ApplicationRole>(c.Resolve<ApplicationDbContext>())).AsImplementedInterfaces().InstancePerRequest();
+            builder.Register(c => HttpContext.Current.GetOwinContext().Authentication).As<IAuthenticationManager>();
+            builder.Register(c => new IdentityFactoryOptions<ApplicationUserManager>
+            {
+                DataProtectionProvider = new Microsoft.Owin.Security.DataProtection.DpapiDataProtectionProvider("Application​")
+            });
+            builder.Register(c => new IdentityFactoryOptions<ApplicationRoleManager>
+            {
+                DataProtectionProvider = new Microsoft.Owin.Security.DataProtection.DpapiDataProtectionProvider("Application​")
+            });
+            builder.RegisterType<ApplicationUserManager>().AsSelf().InstancePerRequest();
+            builder.RegisterType<ApplicationSignInManager>().AsSelf().InstancePerRequest();
+            builder.RegisterType<ApplicationRoleManager>().AsSelf().InstancePerRequest();
+
             builder.RegisterControllers(typeof(MvcApplication).Assembly)
              .InstancePerHttpRequest();
 
-            //builder.Register(c => new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(new ApplicationDbContext())))
-            //    .As<UserManager<ApplicationUser>>().InstancePerHttpRequest();
-
-            builder.RegisterModule<AutofacWebTypesModule>();
+            //builder.RegisterModule<AutofacWebTypesModule>();
             IContainer container = builder.Build();
             DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
         }

@@ -1,21 +1,27 @@
-﻿using Learn.lib.Attributes;
-using Learn.lib.DataEnum;
+﻿using Learn.DataModel.Models;
+using Learn.lib.Attributes;
+using Learn.Web.Core.Manager;
 using Learn.Web.Models.ViewModels;
-using Microsoft.AspNet.Identity;
-using Microsoft.AspNet.Identity.EntityFramework;
 using System.Collections.Generic;
-using System.Security.Claims;
 using System.Threading.Tasks;
 using System.Web.Mvc;
+using System.Linq;
+using AutoMapper;
 
 namespace Learn.Web.Controllers
 {
-    [CustomAuthorize(Roles="Admin")]
     public class RolesController : BaseController
     {
+        private readonly ApplicationRoleManager RoleManager;
+
+        public RolesController(ApplicationRoleManager roleManager)
+        {
+            RoleManager = roleManager;
+        }
+
         public async Task<ActionResult> GetRole(string Id)
         {
-            var role = await this.RoleManager.FindByIdAsync(Id);
+            var role = await RoleManager.FindByIdAsync(Id);
 
             if (role != null)
             {
@@ -25,13 +31,9 @@ namespace Learn.Web.Controllers
 
         public ActionResult Index()
         {
-            var roles = this.RoleManager.Roles;
-            var roleList = new List<RoleBindingModel> ();
-            foreach(var role in roles)
-            {
-                roleList.Add(new RoleBindingModel(){ Id = role.Id, Name = role.Name});
-            }
-            return View(roleList);
+            var roleList = RoleManager.Roles.ToList();
+            var roleViewModel = Mapper.Map<IEnumerable<ApplicationRole>, IEnumerable<RoleBindingModel>>(roleList);
+            return View(roleViewModel);
         }
 
         [HttpGet]
@@ -47,8 +49,8 @@ namespace Learn.Web.Controllers
             {
                 return View(model);
             }
-            var role = new IdentityRole { Name = model.Name };
-            var result = await this.RoleManager.CreateAsync(role);
+            var role = new ApplicationRole { Name = model.Name };
+            var result = await RoleManager.CreateAsync(role);
             if (!result.Succeeded)
             {
                 if (result.Errors != null)

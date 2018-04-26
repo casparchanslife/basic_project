@@ -6,9 +6,14 @@ namespace Learn.Data.Infrastructure
     {
         private ApplicationDbContext dataContext;
 
+        public DatabaseFactory(ApplicationDbContext dbContext)
+        {
+            dataContext = dbContext;
+        }
+
         public ApplicationDbContext Get()
         {
-            return dataContext ?? (dataContext = new ApplicationDbContext());
+            return dataContext;
         }
         protected override void DisposeCore()
         {

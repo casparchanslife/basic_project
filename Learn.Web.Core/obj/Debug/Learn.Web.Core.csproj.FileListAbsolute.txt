@@ -45,9 +45,9 @@ C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Web.Core
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Web.Core\bin\Debug\System.Web.Razor.xml
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Web.Core\bin\Debug\System.Web.WebPages.Razor.xml
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Web.Core\bin\Debug\System.Web.WebPages.xml
-C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Web.Core\bin\Debug\Microsoft.Web.Infrastructure.xml
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Web.Core\bin\Debug\System.Web.WebPages.Deployment.xml
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Web.Core\obj\Debug\Learn.Web.Core.csprojResolveAssemblyReference.cache
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Web.Core\obj\Debug\Learn.Web.Core.csproj.CoreCompileInputs.cache
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Web.Core\obj\Debug\Learn.Web.Core.dll
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Web.Core\obj\Debug\Learn.Web.Core.pdb
+C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Web.Core\bin\Debug\Learn.Web.Service.dll.config

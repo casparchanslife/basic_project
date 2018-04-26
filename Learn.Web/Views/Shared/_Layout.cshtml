@@ -26,6 +26,7 @@
                     <li>@Html.ActionLink("Contact", "Contact", "Home", new { Area = "" }, null)</li>
                     <li>@Html.ActionLink("Notes", "Index", "Notes", new { Area = "Admin" },null)</li>
                     <li>@Html.ActionLink("Roles", "Index", "Roles", new { Area = "" }, null)</li>
+                    <li>@Html.ActionLink("Users", "Index", "Users", new { Area = "" }, null)</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
@@ -42,5 +43,6 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+    @RenderSection("styles", required: false)
 </body>
 </html>

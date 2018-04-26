@@ -51,8 +51,9 @@ C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Core\bin
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Core\bin\Debug\System.Web.Razor.xml
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Core\bin\Debug\System.Web.WebPages.Razor.xml
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Core\bin\Debug\System.Web.WebPages.xml
-C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Core\bin\Debug\Microsoft.Web.Infrastructure.xml
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Core\bin\Debug\System.Web.WebPages.Deployment.xml
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Core\bin\Debug\Learn.DataModel.dll
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Core\bin\Debug\Learn.DataModel.pdb
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Core\bin\Debug\Learn.DataModel.dll.config
+C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Core\bin\Debug\System.Web.Helpers.dll
+C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Core\bin\Debug\System.Web.Helpers.xml

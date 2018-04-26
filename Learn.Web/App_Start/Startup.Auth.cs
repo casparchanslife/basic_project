@@ -9,6 +9,7 @@ using Learn.DataModel.Models;
 using Learn.Data;
 using Learn.Web.Core.Manager;
 
+
 namespace Learn.Web
 {
     public partial class Startup
@@ -17,10 +18,10 @@ namespace Learn.Web
         public void ConfigureAuth(IAppBuilder app)
         {
             // Configure the db context, user manager and signin manager to use a single instance per request
-            app.CreatePerOwinContext(ApplicationDbContext.Create);
-            app.CreatePerOwinContext<ApplicationUserManager>(ApplicationUserManager.Create);
-            app.CreatePerOwinContext<ApplicationSignInManager>(ApplicationSignInManager.Create);
-            app.CreatePerOwinContext<ApplicationRoleManager>(ApplicationRoleManager.Create);
+            //app.CreatePerOwinContext(ApplicationDbContext.Create);
+            //app.CreatePerOwinContext<ApplicationUserManager>(ApplicationUserManager.Create);
+            //app.CreatePerOwinContext<ApplicationSignInManager>(ApplicationSignInManager.Create);
+            //app.CreatePerOwinContext<ApplicationRoleManager>(ApplicationRoleManager.Create);
 
             // Enable the application to use a cookie to store information for the signed in user
             // and to use a cookie to temporarily store information about a user logging in with a third party login provider
@@ -71,6 +72,7 @@ namespace Learn.Web
             app.UseGoogleAuthentication(
                  clientId: "1070723376034-qmaco8mtqg5que00t19pk54fr9pmqj7r.apps.googleusercontent.com",
                  clientSecret: "UFIDnZ48P5MErNaChv2OZuAR");
+
         }
     }
 }

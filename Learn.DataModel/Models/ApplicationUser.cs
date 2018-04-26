@@ -45,6 +45,7 @@ namespace Learn.DataModel.Models
         {
             CreateDate = DateTime.Now;
             UpdateDate = DateTime.Now;
+            Status = "A";
         }
 
     }

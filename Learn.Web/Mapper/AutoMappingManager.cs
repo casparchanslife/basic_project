@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Learn.DataModel.Models;
 using Learn.lib.Models.ViewModels;
+using Learn.Web.Models.ViewModels;
 
 namespace Learn.Web
 {
@@ -10,6 +11,11 @@ namespace Learn.Web
         {
             Mapper.CreateMap<NoteViewModel, Note>();
             Mapper.CreateMap<Note, NoteViewModel>();
+
+            Mapper.CreateMap<ApplicationRole, RoleBindingModel>();
+
+            Mapper.CreateMap<ApplicationUser, UserViewModel>();
+
         }
     }
 }

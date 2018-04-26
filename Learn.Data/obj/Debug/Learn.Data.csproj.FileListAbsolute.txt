@@ -57,7 +57,6 @@ C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Data\bin
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Data\bin\Debug\System.Web.WebPages.xml
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Data\bin\Debug\System.Web.Mvc.xml
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Data\bin\Debug\Microsoft.Practices.Unity.Interception.xml
-C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Data\bin\Debug\Microsoft.Web.Infrastructure.xml
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Data\bin\Debug\System.Web.Razor.xml
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Data\bin\Debug\System.Web.WebPages.Deployment.xml
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Data\bin\Debug\System.Web.WebPages.Razor.xml

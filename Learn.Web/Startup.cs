@@ -1,5 +1,6 @@
 ﻿using Microsoft.Owin;
 using Owin;
+using Autofac;
 
 [assembly: OwinStartupAttribute(typeof(Learn.Web.Startup))]
 namespace Learn.Web

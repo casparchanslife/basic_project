@@ -19,17 +19,18 @@ using Learn.Web.Controllers;
 
 namespace Learn.Web.Areas.Admin.Controllers
 {
-    [CustomAuthorize(Roles ="Admin, Writter")]
+    [CustomAuthorize(Roles =" Writter")]
     public class NotesController : BaseController
     {
         private readonly INoteService noteService;
         private readonly IApplicationUserService ApplicationUserService;
-       
+        private readonly ApplicationUserManager UserManager;
 
-        public NotesController(INoteService noteService, IApplicationUserService applicationUserService)
+        public NotesController(INoteService noteService, IApplicationUserService applicationUserService, ApplicationUserManager userManger)
         {
             this.noteService = noteService;
             this.ApplicationUserService = applicationUserService;
+            this.UserManager = userManger;
         }
 
         public ActionResult Index()

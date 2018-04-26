@@ -28,6 +28,24 @@ namespace Learn.Web
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+
+            // chosen css styles
+            bundles.Add(new StyleBundle("~/Content/plugins/chosen/chosenStyles").Include(
+                      "~/Content/plugins/chosen/chosen.css"));
+
+            // chosen
+            bundles.Add(new ScriptBundle("~/plugins/chosen").Include(
+                      "~/Scripts/plugins/chosen/chosen.jquery.js"));
+
+            // Select2 Styless
+            bundles.Add(new StyleBundle("~/plugins/select2Styles").Include(
+                      "~/Content/plugins/select2/select2.css"));
+
+            // Select2
+            bundles.Add(new ScriptBundle("~/plugins/select2").Include(
+                      "~/Scripts/plugins/select2/select2.js"));
+
         }
     }
 }

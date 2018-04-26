@@ -272,3 +272,8 @@ C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Web\obj\
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Web\bin\Learn.Web.Core.dll
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Web\bin\Learn.Web.Core.pdb
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Web\bin\Learn.Web.Core.dll.config
+C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Web\bin\Autofac.Integration.Mvc.Owin.dll
+C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Web\bin\Autofac.Integration.Owin.dll
+C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Web\bin\Autofac.Integration.Mvc.Owin.xml
+C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Web\bin\Autofac.Integration.Owin.xml
+C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Web\bin\Learn.Web.Service.dll.config

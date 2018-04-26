@@ -14,45 +14,8 @@ namespace Learn.Web.Controllers
 {
     public class BaseController : Controller
     {
-        protected ApplicationSignInManager _signInManager;
-        protected ApplicationUserManager _userManager;
-        protected ApplicationRoleManager _roleManager;
-
-        public ApplicationSignInManager SignInManager
-        {
-            get
-            {
-                return _signInManager ?? HttpContext.GetOwinContext().Get<ApplicationSignInManager>();
-            }
-            protected set
-            {
-                _signInManager = value;
-            }
-        }
-
-        public ApplicationUserManager UserManager
-        {
-            get
-            {
-                return _userManager ?? HttpContext.GetOwinContext().GetUserManager<ApplicationUserManager>();
-            }
-            protected set
-            {
-                _userManager = value;
-            }
-        }
-
-        protected ApplicationRoleManager RoleManager
-        {
-            get
-            {
-                return _roleManager ?? HttpContext.GetOwinContext().GetUserManager<ApplicationRoleManager>();
-            }
-        }
-
         public BaseController()
         {
         }
-
     }
 }
