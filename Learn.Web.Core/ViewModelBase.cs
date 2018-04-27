@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 
 
-namespace Learn.lib.Models.ViewModels
+namespace Learn.ViewModel
 {
     public class ViewModelBase
     {

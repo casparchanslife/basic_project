@@ -1,17 +1,15 @@
 ﻿using AutoMapper;
-using Learn.Core;
-using Learn.Core.Extensions;
+using Learn.Lib;
+using Learn.Lib.Extensions;
 using Learn.DataModel.Models;
-using Learn.lib.Models.ViewModels;
-using Learn.Web.Core.Manager;
-using Learn.Web.Models.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
-
+using Learn.Service.Manager;
+using Learn.ViewModel;
 
 namespace Learn.Web.Controllers
 {

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Learn.Core
+namespace Learn.Lib
 {
     public class OAuthGlobal
     {

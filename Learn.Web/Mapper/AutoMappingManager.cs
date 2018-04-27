@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using Learn.DataModel.Models;
-using Learn.lib.Models.ViewModels;
-using Learn.Web.Models.ViewModels;
+using Learn.ViewModel;
 
 namespace Learn.Web
 {

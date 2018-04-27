@@ -1,5 +1,4 @@
 ﻿using Learn.lib.Attributes;
-using Learn.Web.Models.ViewModels;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using System.Collections.Generic;

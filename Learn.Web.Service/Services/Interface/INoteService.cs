@@ -1,13 +1,14 @@
-﻿using Learn.Core;
+﻿using Learn.Lib;
 using Learn.DataModel.Models;
 using System;
 using System.Collections.Generic;
+using Learn.ViewModel;
 
 namespace Learn.Web.Service.Services
 {
     public interface INoteService
     {
-        IEnumerable<Note> GetNotes();
+        IEnumerable<NoteViewModel> GetNotes();
 
         IEnumerable<ValidationResult> CanAddNote(Note newNote);
 

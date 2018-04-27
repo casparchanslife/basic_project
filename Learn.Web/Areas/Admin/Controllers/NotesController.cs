@@ -1,8 +1,7 @@
 ﻿using AutoMapper;
-using Learn.Core;
-using Learn.Core.Extensions;
+using Learn.Lib;
+using Learn.Lib.Extensions;
 using Learn.DataModel.Models;
-using Learn.lib.Models.ViewModels;
 using Learn.Web.Service.Services;
 using System;
 using System.Collections.Generic;
@@ -11,11 +10,12 @@ using Microsoft.AspNet.Identity;
 using Learn.Service;
 using System.Threading.Tasks;
 using System.Security.Claims;
-using Learn.Web.Core.Manager;
 using System.Web;
 using Microsoft.AspNet.Identity.Owin;
 using Learn.lib.Attributes;
 using Learn.Web.Controllers;
+using Learn.Service.Manager;
+using Learn.ViewModel;
 
 namespace Learn.Web.Areas.Admin.Controllers
 {
@@ -36,8 +36,7 @@ namespace Learn.Web.Areas.Admin.Controllers
         public ActionResult Index()
         {
             var notes = noteService.GetNotes();
-            var notesViewModel = Mapper.Map<IEnumerable<Note>, IEnumerable<NoteViewModel>>(notes);
-            return View(notesViewModel);
+            return View(notes);
         }
 
 

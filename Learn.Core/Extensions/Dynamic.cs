@@ -9,7 +9,7 @@ using System.Reflection;
 using System.Reflection.Emit;
 using System.Threading;
 
-namespace Learn.Core.Extensions
+namespace Learn.Lib.Extensions
 {
     public static class DynamicQueryable
     {

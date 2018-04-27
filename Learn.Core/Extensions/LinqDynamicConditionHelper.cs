@@ -7,7 +7,7 @@ using System.Configuration;
 using System.Data.SqlTypes;
 using Eslite.Lib.Helpers.Grid;
 
-namespace Learn.Core.Extensions
+namespace Learn.Lib.Extensions
 {
     // http://vbcity.com/blogs/rock/archive/2012/11/23/leveraging-jqgrid-searches-and-dynamic-linq-on-asp-net-mvc-solutions.aspx
     public static class LinqDynamicConditionHelper

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Learn.Core.Extensions
+namespace Learn.Lib.Extensions
 {
     public class IpAddressAttribute : RegularExpressionAttribute
     {

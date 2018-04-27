@@ -233,12 +233,6 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Mapper\AutoMappingManager.cs" />
-    <Compile Include="Models\ViewModels\AccountViewModels.cs" />
-    <Compile Include="Models\ViewModels\ManageViewModels.cs" />
-    <Compile Include="Models\ViewModelBase.cs" />
-    <Compile Include="Models\ViewModels\UserViewModel.cs" />
-    <Compile Include="Models\ViewModels\NoteViewModel.cs" />
-    <Compile Include="Models\ViewModels\RoleBindingModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -410,6 +404,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Models\" />
     <Folder Include="Extensions\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -425,9 +420,9 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Learn.Core\Learn.Core.csproj">
+    <ProjectReference Include="..\Learn.Core\Learn.Lib.csproj">
       <Project>{d788d939-330c-45e3-a1ae-086c183da0c2}</Project>
-      <Name>Learn.Core</Name>
+      <Name>Learn.Lib</Name>
     </ProjectReference>
     <ProjectReference Include="..\Learn.DataModel\Learn.DataModel.csproj">
       <Project>{38F7FD3F-999F-4551-8E57-3DD05BA756AE}</Project>
@@ -441,13 +436,13 @@
       <Project>{8ec71ef5-414a-4874-96be-d5b1a240e04d}</Project>
       <Name>Learn.Log</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Learn.Web.Core\Learn.Web.Core.csproj">
+    <ProjectReference Include="..\Learn.Web.Core\Learn.ViewModel.csproj">
       <Project>{8E3E9C61-5C98-4F2C-BC18-387A6C10AD72}</Project>
-      <Name>Learn.Web.Core</Name>
+      <Name>Learn.ViewModel</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Learn.Web.Service\Learn.Web.Service.csproj">
+    <ProjectReference Include="..\Learn.Web.Service\Learn.Service.csproj">
       <Project>{9783090D-51F7-4B28-90D9-A7026EF82A6D}</Project>
-      <Name>Learn.Web.Service</Name>
+      <Name>Learn.Service</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

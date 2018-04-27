@@ -46,3 +46,5 @@ C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Web.Serv
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Web.Service\bin\Debug\System.Web.WebPages.xml
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Web.Service\bin\Debug\System.Web.WebPages.Deployment.xml
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Web.Service\bin\Debug\Learn.Web.Service.dll.config
+C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Web.Service\bin\Debug\AutoMapper.dll
+C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Web.Service\bin\Debug\AutoMapper.xml

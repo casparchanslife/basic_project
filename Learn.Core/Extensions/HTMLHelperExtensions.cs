@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Mvc.Html;
 
-namespace Learn.Core.Extensions
+namespace Learn.Lib.Extensions
 {
     public static class HTMLHelperExtensions
     {

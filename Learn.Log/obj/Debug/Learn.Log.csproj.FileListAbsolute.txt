@@ -39,3 +39,4 @@ C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Log\bin\
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Log\obj\Debug\Learn.Log.csproj.CoreCompileInputs.cache
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Log\obj\Debug\Learn.Log.dll
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Log\obj\Debug\Learn.Log.pdb
+C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Log\obj\Debug\Learn.Log.csprojResolveAssemblyReference.cache

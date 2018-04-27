@@ -3,8 +3,10 @@ using System.Linq;
 using Learn.Lib.Infrastructure.Interface;
 using Learn.Data.Infrastructure.Repositories.Interface;
 using Learn.DataModel.Models;
-using Learn.Core;
+using Learn.Lib;
 using System;
+using AutoMapper;
+using Learn.ViewModel;
 
 namespace Learn.Web.Service.Services
 {
@@ -19,10 +21,11 @@ namespace Learn.Web.Service.Services
             this.unitOfWork = unitOfWork;
         }
 
-        public IEnumerable<Note> GetNotes()
+        public IEnumerable<NoteViewModel> GetNotes()
         {
             var notes = noteRepository.GetAll().OrderByDescending(g => g.CreateDate);
-            return notes;
+            var notesViewModel = Mapper.Map<IEnumerable<Note>, IEnumerable<NoteViewModel>>(notes);
+            return notesViewModel;
         }
 
         public IEnumerable<ValidationResult> CanAddNote(Note newNote)

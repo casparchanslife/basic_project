@@ -10,12 +10,12 @@ using Learn.Web;
 using Learn.Data.Repositories;
 using Learn.Service;
 using Learn.Data;
-using Learn.Web.Core.Manager;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Learn.DataModel.Models;
 using System.Web;
 using Microsoft.Owin.Security;
+using Learn.Service.Manager;
 
 namespace Learn
 {

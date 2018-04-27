@@ -1,8 +1,8 @@
 ﻿using Learn.DataModel.Models;
-using Learn.Web.Core.Manager;
+using Learn.Service.Manager;
 using System.Linq;
 
-namespace Learn.Web.Core.Extensions
+namespace Learn.Service.Extensions
 {
     public static class UserManagerExtensions
     {

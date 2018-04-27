@@ -7,8 +7,7 @@ using Microsoft.Owin.Security.Facebook;
 using Owin;
 using Learn.DataModel.Models;
 using Learn.Data;
-using Learn.Web.Core.Manager;
-
+using Learn.Service.Manager;
 
 namespace Learn.Web
 {

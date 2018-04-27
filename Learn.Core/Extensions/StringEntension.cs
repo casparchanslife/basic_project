@@ -9,7 +9,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Web.Mvc;
 
-namespace Learn.Core.Extensions
+namespace Learn.Lib.Extensions
 {
     public static class StringEntension
     {

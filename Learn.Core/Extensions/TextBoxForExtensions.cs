@@ -8,7 +8,7 @@ using System.Web.Mvc;
 using System.Web.Mvc.Html;
 using System.Web.Routing;
 
-namespace Learn.Core.Extensions
+namespace Learn.Lib.Extensions
 {
     public static class TextBoxForExtensions
     {

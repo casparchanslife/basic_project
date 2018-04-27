@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Web.Mvc;
 
-namespace Learn.Core.Extensions
+namespace Learn.Lib.Extensions
 {
     public static class ModelStateExtensions
     {

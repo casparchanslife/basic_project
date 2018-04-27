@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Learn.DataModel.Models;
-using Learn.Core;
+using Learn.Lib;
 using Learn.Lib.Infrastructure.Interface;
 using Learn.Data.Repositories.Interface;
 using System.Threading.Tasks;

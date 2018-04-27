@@ -286,9 +286,9 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Learn.Core\Learn.Core.csproj">
+    <ProjectReference Include="..\Learn.Core\Learn.Lib.csproj">
       <Project>{D788D939-330C-45E3-A1AE-086C183DA0C2}</Project>
-      <Name>Learn.Core</Name>
+      <Name>Learn.Lib</Name>
     </ProjectReference>
     <ProjectReference Include="..\Learn.DataModel\Learn.DataModel.csproj">
       <Project>{38F7FD3F-999F-4551-8E57-3DD05BA756AE}</Project>

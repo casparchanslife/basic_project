@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Web.Mvc;
 
-namespace Learn.lib.Models.ViewModels
+namespace Learn.ViewModel
 {
     public class UserViewModel : ViewModelBase
     {

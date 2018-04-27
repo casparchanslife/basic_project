@@ -1,4 +1,4 @@
-﻿using Learn.Core;
+﻿using Learn.Lib;
 using Learn.Data;
 using Learn.DataModel.Models;
 using Microsoft.AspNet.Identity;

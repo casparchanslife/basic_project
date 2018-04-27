@@ -7,7 +7,7 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 
 
-namespace Learn.Web.Core.Manager
+namespace Learn.Service.Manager
 {
 
     // Configure the application sign-in manager which is used in this application.

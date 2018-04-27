@@ -1,4 +1,4 @@
-﻿using Learn.Core;
+﻿using Learn.Lib;
 using Microsoft.Owin.Security.Infrastructure;
 using System;
 

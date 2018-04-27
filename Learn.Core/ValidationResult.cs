@@ -1,5 +1,5 @@
 ﻿
-namespace Learn.Core
+namespace Learn.Lib
 {
     /// <summary>
     /// Describes the result of a validation of a potential change through a business service.

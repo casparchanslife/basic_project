@@ -5,7 +5,7 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 
-namespace Learn.Web.Core.Manager
+namespace Learn.Service.Manager
 {
     public class ApplicationRoleManager : RoleManager<ApplicationRole>
     {

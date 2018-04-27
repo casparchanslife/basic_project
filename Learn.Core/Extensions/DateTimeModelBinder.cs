@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web.Mvc;
 
-namespace Learn.Core.Extensions
+namespace Learn.Lib.Extensions
 {
     public class DateTimeModelBinder : DefaultModelBinder
     {
