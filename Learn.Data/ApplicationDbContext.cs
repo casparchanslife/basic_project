@@ -1,6 +1,6 @@
 ﻿using System.Data.Entity;
 using Microsoft.AspNet.Identity.EntityFramework;
-using Learn.DataModel.Models;
+using Learn.DataModel;
 
 namespace Learn.Data
 {

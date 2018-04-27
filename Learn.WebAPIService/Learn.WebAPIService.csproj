@@ -290,10 +290,6 @@
       <Project>{D788D939-330C-45E3-A1AE-086C183DA0C2}</Project>
       <Name>Learn.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Learn.DataModel\Learn.DataModel.csproj">
-      <Project>{38F7FD3F-999F-4551-8E57-3DD05BA756AE}</Project>
-      <Name>Learn.DataModel</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Learn.Data\Learn.Data.csproj">
       <Project>{E410E65F-3398-4D53-89B0-742379BFB294}</Project>
       <Name>Learn.Data</Name>

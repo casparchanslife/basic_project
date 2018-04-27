@@ -1,7 +1,7 @@
 ﻿using Learn.Data.Infrastructure;
 using Learn.Data.Infrastructure.Interface;
 using Learn.Data.Infrastructure.Repositories.Interface;
-using Learn.DataModel.Models;
+using Learn.DataModel;
 
 namespace Learn.Lib.Infrastructure.Repositories
 {

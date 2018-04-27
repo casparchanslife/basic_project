@@ -1,6 +1,6 @@
 ﻿using Learn.Core;
 using Learn.Data;
-using Learn.DataModel.Models;
+using Learn.DataModel;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Owin.Security;

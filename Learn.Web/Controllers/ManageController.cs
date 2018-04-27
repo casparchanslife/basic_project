@@ -3,10 +3,9 @@ using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
-using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Learn.Web.Models.ViewModels;
-using Learn.Web.Core.Manager;
+using Learn.Web.Manager;
 
 namespace Learn.Web.Controllers
 {

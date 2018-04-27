@@ -1,12 +1,11 @@
-﻿using Learn.DataModel.Models;
-using Learn.lib.Attributes;
-using Learn.Web.Core.Manager;
-using Learn.Web.Models.ViewModels;
+﻿using Learn.Web.Models.ViewModels;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Web.Mvc;
 using System.Linq;
 using AutoMapper;
+using Learn.Web.Manager;
+using Learn.DataModel;
 
 namespace Learn.Web.Controllers
 {

@@ -147,7 +147,6 @@ C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.WebAPISe
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.WebAPIService\bin\EntityFramework.dll
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.WebAPIService\bin\EntityFramework.SqlServer.dll
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.WebAPIService\bin\Learn.Data.dll
-C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.WebAPIService\bin\Learn.DataModel.dll
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.WebAPIService\bin\Learn.lib.dll
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.WebAPIService\bin\Microsoft.AI.Agent.Intercept.dll
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.WebAPIService\bin\Microsoft.AI.DependencyCollector.dll
@@ -180,8 +179,6 @@ C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.WebAPISe
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.WebAPIService\bin\PagedList.dll
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.WebAPIService\bin\Learn.lib.pdb
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.WebAPIService\bin\Learn.lib.dll.config
-C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.WebAPIService\bin\Learn.DataModel.pdb
-C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.WebAPIService\bin\Learn.DataModel.dll.config
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.WebAPIService\bin\Learn.Data.pdb
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.WebAPIService\bin\Learn.Data.dll.config
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.WebAPIService\bin\EntityFramework.xml

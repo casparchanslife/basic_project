@@ -86,6 +86,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationDbContext.cs" />
+    <Compile Include="DataModel\ModelBase.cs" />
+    <Compile Include="DataModel\ApplicationRole.cs" />
+    <Compile Include="DataModel\ApplicationUser.cs" />
+    <Compile Include="DataModel\fmk_function.cs" />
+    <Compile Include="DataModel\fmk_function_group.cs" />
+    <Compile Include="DataModel\fmk_function_role.cs" />
+    <Compile Include="DataModel\Note.cs" />
     <Compile Include="Infrastructure\DatabaseFactory.cs" />
     <Compile Include="Infrastructure\Disposable.cs" />
     <Compile Include="Infrastructure\Interface\IDatabaseFactory.cs" />
@@ -125,10 +132,6 @@
     <ProjectReference Include="..\Learn.Core\Learn.Core.csproj">
       <Project>{D788D939-330C-45E3-A1AE-086C183DA0C2}</Project>
       <Name>Learn.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Learn.DataModel\Learn.DataModel.csproj">
-      <Project>{38F7FD3F-999F-4551-8E57-3DD05BA756AE}</Project>
-      <Name>Learn.DataModel</Name>
     </ProjectReference>
     <ProjectReference Include="..\Learn.Log\Learn.Log.csproj">
       <Project>{8EC71EF5-414A-4874-96BE-D5B1A240E04D}</Project>

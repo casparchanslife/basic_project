@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using Learn.DataModel.Models;
+using Learn.DataModel;
 using Learn.lib.Models.ViewModels;
 using Learn.Web.Models.ViewModels;
 

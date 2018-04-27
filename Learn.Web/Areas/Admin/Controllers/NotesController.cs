@@ -1,21 +1,17 @@
 ﻿using AutoMapper;
 using Learn.Core;
 using Learn.Core.Extensions;
-using Learn.DataModel.Models;
 using Learn.lib.Models.ViewModels;
-using Learn.Web.Service.Services;
 using System;
 using System.Collections.Generic;
 using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
-using Learn.Service;
-using System.Threading.Tasks;
-using System.Security.Claims;
-using Learn.Web.Core.Manager;
-using System.Web;
-using Microsoft.AspNet.Identity.Owin;
 using Learn.lib.Attributes;
 using Learn.Web.Controllers;
+using Learn.Web.Services;
+using Learn.Web.Interface.Services;
+using Learn.Web.Manager;
+using Learn.DataModel;
 
 namespace Learn.Web.Areas.Admin.Controllers
 {

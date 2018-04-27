@@ -1,5 +1,5 @@
 ﻿using Learn.Data.Infrastructure.Interface;
-using Learn.DataModel.Models;
+using Learn.DataModel;
 using System.Threading.Tasks;
 
 namespace Learn.Data.Repositories.Interface

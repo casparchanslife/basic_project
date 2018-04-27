@@ -5,10 +5,8 @@ using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Facebook;
 using Owin;
-using Learn.DataModel.Models;
-using Learn.Data;
-using Learn.Web.Core.Manager;
-
+using Learn.Web.Manager;
+using Learn.DataModel;
 
 namespace Learn.Web
 {

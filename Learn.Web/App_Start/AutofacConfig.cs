@@ -5,17 +5,16 @@ using Learn.Data.Infrastructure;
 using Learn.Lib.Infrastructure.Interface;
 using Learn.Data.Infrastructure.Interface;
 using Learn.Lib.Infrastructure.Repositories;
-using Learn.Web.Service.Services;
 using Learn.Web;
 using Learn.Data.Repositories;
-using Learn.Service;
 using Learn.Data;
-using Learn.Web.Core.Manager;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
-using Learn.DataModel.Models;
 using System.Web;
 using Microsoft.Owin.Security;
+using Learn.Web.Services;
+using Learn.Web.Manager;
+using Learn.DataModel;
 
 namespace Learn
 {

@@ -162,10 +162,6 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Learn.DataModel\Learn.DataModel.csproj">
-      <Project>{38F7FD3F-999F-4551-8E57-3DD05BA756AE}</Project>
-      <Name>Learn.DataModel</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Learn.Log\Learn.Log.csproj">
       <Project>{8ec71ef5-414a-4874-96be-d5b1a240e04d}</Project>
       <Name>Learn.Log</Name>
