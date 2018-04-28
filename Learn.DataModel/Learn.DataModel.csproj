@@ -66,5 +66,11 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Learn.Lib\Learn.Lib.csproj">
+      <Project>{d788d939-330c-45e3-a1ae-086c183da0c2}</Project>
+      <Name>Learn.Lib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

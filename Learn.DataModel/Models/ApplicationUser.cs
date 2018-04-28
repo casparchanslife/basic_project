@@ -5,6 +5,7 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using System;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using Learn.Lib;
 
 namespace Learn.DataModel.Models
 {
@@ -40,13 +41,6 @@ namespace Learn.DataModel.Models
         public string UpdatedById { get; set; }
 
         public virtual ApplicationUser UpdatedBy { get; set; }
-
-        public ApplicationUser()
-        {
-            CreateDate = DateTime.Now;
-            UpdateDate = DateTime.Now;
-            Status = "A";
-        }
 
     }
 

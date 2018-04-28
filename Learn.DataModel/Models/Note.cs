@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Learn.Lib;
+using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -15,6 +16,5 @@ namespace Learn.DataModel.Models
         [Display(Name = "Message")]
         [StringLength(30)]
         public string Message { get; set; }
-
     }
 }

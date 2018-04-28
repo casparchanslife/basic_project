@@ -1,4 +1,5 @@
 ﻿using Learn.DataModel.Models;
+using Learn.Lib;
 using System;
 using System.ComponentModel.DataAnnotations;
 
@@ -24,10 +25,6 @@ namespace Learn.DataModel
         [Display(Name = "Updated By")]
         public virtual ApplicationUser UpdatedBy { get; set; }
 
-        public ModelBase()
-        {
-            CreateDate = DateTime.Now;
-            UpdateDate = DateTime.Now;
-        }
+
     }
 }
