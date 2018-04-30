@@ -80,6 +80,7 @@
     <Compile Include="Services\NoteService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\SmsService.cs" />
+    <Compile Include="Services\FunctionRoleService.cs" />
     <Compile Include="Services\UserRoleService.cs" />
     <Compile Include="Services\UserService.cs" />
   </ItemGroup>

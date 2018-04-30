@@ -226,3 +226,6 @@ C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.WebAPISe
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.WebAPIService\obj\Debug\Learn.WebAPIService.csproj.CoreCompileInputs.cache
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.WebAPIService\obj\Debug\Learn.WebAPIService.dll
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.WebAPIService\obj\Debug\Learn.WebAPIService.pdb
+C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.WebAPIService\bin\Learn.Web.Core.dll
+C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.WebAPIService\bin\Learn.Web.Core.pdb
+C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.WebAPIService\bin\Learn.Web.Core.dll.config

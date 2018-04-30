@@ -66,3 +66,6 @@ C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Data\obj
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Data\obj\Debug\Learn.Data.csproj.CoreCompileInputs.cache
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Data\obj\Debug\Learn.Data.dll
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Data\obj\Debug\Learn.Data.pdb
+C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Data\bin\Debug\Learn.Web.Core.dll
+C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Data\bin\Debug\Learn.Web.Core.pdb
+C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Data\bin\Debug\Learn.Web.Core.dll.config

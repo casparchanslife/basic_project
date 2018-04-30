@@ -104,6 +104,7 @@
       <DependentUpon>201804150924509_update_fmk_role.cs</DependentUpon>
     </Compile>
     <Compile Include="Infrastructure\Interface\IRepository.cs" />
+    <Compile Include="Repositories\FunctionRoleRepository.cs" />
     <Compile Include="Repositories\NoteRepository.cs" />
     <Compile Include="Infrastructure\RepositoryBase.cs" />
     <Compile Include="Infrastructure\UnitOfWork.cs" />
@@ -131,6 +132,10 @@
     <ProjectReference Include="..\Learn.Log\Learn.Log.csproj">
       <Project>{8EC71EF5-414A-4874-96BE-D5B1A240E04D}</Project>
       <Name>Learn.Log</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Learn.ViewModel\Learn.ViewModel.csproj">
+      <Project>{8E3E9C61-5C98-4F2C-BC18-387A6C10AD72}</Project>
+      <Name>Learn.ViewModel</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

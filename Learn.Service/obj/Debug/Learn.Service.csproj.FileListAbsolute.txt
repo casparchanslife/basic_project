@@ -87,7 +87,6 @@ C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Service\
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Service\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Service\bin\Debug\Microsoft.Practices.ServiceLocation.dll
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Service\bin\Debug\System.Web.Razor.dll
-C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Service\bin\Debug\System.Web.WebPages.Razor.dll
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Service\bin\Debug\Microsoft.Web.Infrastructure.dll
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Service\bin\Debug\System.Web.WebPages.Deployment.dll
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Service\bin\Debug\Microsoft.Practices.Unity.Interception.dll
@@ -108,7 +107,6 @@ C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Service\
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Service\bin\Debug\Microsoft.Owin.Security.Cookies.xml
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Service\bin\Debug\Microsoft.Owin.Security.OAuth.xml
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Service\bin\Debug\Newtonsoft.Json.xml
-C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Service\bin\Debug\System.Web.Mvc.xml
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Service\bin\Debug\System.Web.WebPages.xml
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Service\bin\Debug\EntityFramework.xml
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Service\bin\Debug\PagedList.xml
@@ -118,10 +116,10 @@ C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Service\
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Service\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Service\bin\Debug\Microsoft.Practices.ServiceLocation.xml
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Service\bin\Debug\System.Web.Razor.xml
-C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Service\bin\Debug\System.Web.WebPages.Razor.xml
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Service\bin\Debug\System.Web.WebPages.Deployment.xml
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Service\bin\Debug\Microsoft.Practices.Unity.Interception.xml
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Service\obj\Debug\Learn.Service.csprojResolveAssemblyReference.cache
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Service\obj\Debug\Learn.Service.csproj.CoreCompileInputs.cache
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Service\obj\Debug\Learn.Web.Service.dll
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Service\obj\Debug\Learn.Web.Service.pdb
+C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.Service\bin\Debug\Microsoft.Web.Infrastructure.xml

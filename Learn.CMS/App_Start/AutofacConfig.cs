@@ -52,6 +52,11 @@ namespace Learn
                    .AsImplementedInterfaces()
                    .InstancePerHttpRequest();
 
+            //builder.RegisterAssemblyTypes(typeof(UserRoleService).Assembly)
+            //       .Where(t => t.Name.EndsWith("Service"))
+            //       .AsImplementedInterfaces()
+            //       .InstancePerHttpRequest();
+
             builder.RegisterType<ApplicationDbContext>().AsSelf().InstancePerRequest();
             builder.Register(c => new UserStore<ApplicationUser>(c.Resolve<ApplicationDbContext>())).AsImplementedInterfaces().InstancePerRequest();
             builder.Register(c => new RoleStore<ApplicationRole>(c.Resolve<ApplicationDbContext>())).AsImplementedInterfaces().InstancePerRequest();

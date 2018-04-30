@@ -14,23 +14,26 @@ namespace Learn.CMS.Areas.Admin.Controllers
 {
     public class RolesController : BaseController
     {
-        private readonly IUserRoleService UserRoleService;
+        private readonly IUserRoleService userRoleService;
+        private readonly IFunctionRoleService functionRoleService;
 
-        public RolesController(IUserRoleService userRoleService)
+        public RolesController(IUserRoleService userRoleService, IFunctionRoleService functionRoleService)
         {
-            this.UserRoleService = userRoleService;
+            this.userRoleService = userRoleService;
+            this.functionRoleService = functionRoleService;
         }
 
         public ActionResult Index()
         {
-            var roleList = UserRoleService.GetUserRoles();
+            var roleList = userRoleService.GetUserRoles();
             return View(roleList);
         }
 
         [HttpGet]
         public ActionResult Create()
         {
-            return View(new RoleBindingModel());
+            var model = new RoleBindingModel();
+            return View(model);
         }
 
         [HttpPost]
@@ -42,7 +45,7 @@ namespace Learn.CMS.Areas.Admin.Controllers
             }
             else
             {
-                await UserRoleService.CreateUserRoleAsync(model);
+                await userRoleService.CreateUserRoleAsync(model);
             }
 
             return RedirectToAction("Index");
@@ -51,7 +54,8 @@ namespace Learn.CMS.Areas.Admin.Controllers
         [HttpGet]
         public async Task<ActionResult> Edit(string Id)
         {
-            var roleViewModel = await UserRoleService.GetUserRole(Id);
+            var roleViewModel = await userRoleService.GetUserRole(Id);
+            roleViewModel.AccessRightList = functionRoleService.GetUserRoleAccessRight(roleViewModel.Id);
             if (roleViewModel == null)
             {
                 return HttpNotFound();
@@ -62,7 +66,7 @@ namespace Learn.CMS.Areas.Admin.Controllers
         [HttpPost]
         public async Task<ActionResult> Edit(RoleBindingModel model)
         {
-            var roleViewModel = await UserRoleService.GetUserRole(model.Id);
+            var roleViewModel = await userRoleService.GetUserRole(model.Id);
             if (roleViewModel == null)
             {
                 return HttpNotFound();
@@ -75,7 +79,7 @@ namespace Learn.CMS.Areas.Admin.Controllers
                 }
                 else
                 {
-                    await UserRoleService.EditUserRoleAsync(model);
+                    await userRoleService.EditUserRoleAsync(model);
                 }
             }
             return RedirectToAction("Index", "Roles");
@@ -83,16 +87,16 @@ namespace Learn.CMS.Areas.Admin.Controllers
 
         public async Task<ActionResult> Delete(string Id)
         {
-            var roleViewModel = await UserRoleService.GetUserRole(Id);
+            var roleViewModel = await userRoleService.GetUserRole(Id);
 
             if (roleViewModel == null)
             {
                 return HttpNotFound();
             }else
             {
-                await UserRoleService.DeleteUserRoleAsync(roleViewModel);
+                await userRoleService.DeleteUserRoleAsync(roleViewModel);
             }
-            return HttpNotFound();
+            return RedirectToAction("Index", "Roles");
         }
 
     }

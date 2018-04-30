@@ -9,6 +9,7 @@ using AutoMapper;
 using System.Linq;
 using System.Web.Mvc;
 using System;
+using Learn.Lib.Infrastructure.Repositories;
 
 namespace Learn.Service
 {
@@ -16,7 +17,7 @@ namespace Learn.Service
     public interface IUserRoleService
     {
         Task<RoleBindingModel> GetUserRole(string userId);
-        void SaveUser();
+        void SaveUserRole();
         IEnumerable<RoleBindingModel> GetUserRoles();
         Task EditUserRoleAsync(RoleBindingModel model);
         Task CreateUserRoleAsync(RoleBindingModel model);
@@ -29,13 +30,15 @@ namespace Learn.Service
     public class UserRoleService : IUserRoleService
     {
         private readonly IApplicationUserRepository applicationUserRepository;
+        private readonly IFunctionRoleRepository functionRoleRepository;
         private readonly IUnitOfWork unitOfWork;
         private readonly ApplicationUserManager UserManager;
         private readonly ApplicationRoleManager RoleManager;
 
-        public UserRoleService(IApplicationUserRepository applicationUserRepository, IUnitOfWork unitOfWork, ApplicationUserManager userManger, ApplicationRoleManager roleManager)
+        public UserRoleService(IApplicationUserRepository applicationUserRepository, IFunctionRoleRepository functionRoleRepository, IUnitOfWork unitOfWork, ApplicationUserManager userManger, ApplicationRoleManager roleManager)
         {
             this.applicationUserRepository = applicationUserRepository;
+            this.functionRoleRepository = functionRoleRepository;
             this.unitOfWork = unitOfWork;
             this.UserManager = userManger;
             this.RoleManager = roleManager;
@@ -59,8 +62,15 @@ namespace Learn.Service
 
         public async Task EditUserRoleAsync(RoleBindingModel model)
         {
-            var role = Mapper.Map<RoleBindingModel, ApplicationRole>(model);
+            var role = await RoleManager.FindByIdAsync(model.Id);
+            role.Name = model.Name;
             var result = await this.RoleManager.UpdateAsync(role);
+
+            for (int i = 0; i < model.AccessRightList.Count(); i++)
+            {
+                functionRoleRepository.UpdateAccessRight(model.AccessRightList[i]);
+            }
+            SaveUserRole();
         }
 
         public async Task CreateUserRoleAsync(RoleBindingModel model)
@@ -73,11 +83,12 @@ namespace Learn.Service
 
         public async Task DeleteUserRoleAsync(RoleBindingModel model)
         {
-            var role = Mapper.Map<RoleBindingModel, ApplicationRole>(model);
+            var role = await RoleManager.FindByIdAsync(model.Id);
+            role.Name = model.Name;
             await RoleManager.DeleteAsync(role);
         }
 
-        public void SaveUser()
+        public void SaveUserRole()
         {
             unitOfWork.Commit();
         }

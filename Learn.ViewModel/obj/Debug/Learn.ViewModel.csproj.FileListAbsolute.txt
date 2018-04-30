@@ -55,8 +55,6 @@ C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.ViewMode
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.ViewModel\bin\Debug\Learn.Web.Core.pdb
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.ViewModel\bin\Debug\EntityFramework.dll
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.ViewModel\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.ViewModel\bin\Debug\Learn.Data.dll
-C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.ViewModel\bin\Debug\Learn.DataModel.dll
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.ViewModel\bin\Debug\Microsoft.AspNet.Identity.Core.dll
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.ViewModel\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.ViewModel\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
@@ -73,12 +71,7 @@ C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.ViewMode
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.ViewModel\bin\Debug\System.Web.WebPages.Deployment.dll
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.ViewModel\bin\Debug\System.Web.WebPages.dll
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.ViewModel\bin\Debug\System.Web.WebPages.Razor.dll
-C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.ViewModel\bin\Debug\PagedList.dll
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.ViewModel\bin\Debug\Learn.lib.dll
-C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.ViewModel\bin\Debug\Learn.DataModel.pdb
-C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.ViewModel\bin\Debug\Learn.DataModel.dll.config
-C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.ViewModel\bin\Debug\Learn.Data.pdb
-C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.ViewModel\bin\Debug\Learn.Data.dll.config
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.ViewModel\bin\Debug\EntityFramework.xml
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.ViewModel\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.ViewModel\bin\Debug\Microsoft.AspNet.Identity.Core.xml
@@ -95,7 +88,6 @@ C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.ViewMode
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.ViewModel\bin\Debug\System.Web.WebPages.xml
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.ViewModel\bin\Debug\System.Web.WebPages.Deployment.xml
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.ViewModel\bin\Debug\System.Web.WebPages.Razor.xml
-C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.ViewModel\bin\Debug\PagedList.xml
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.ViewModel\bin\Debug\Learn.lib.pdb
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.ViewModel\bin\Debug\Learn.lib.dll.config
 C:\Users\caspa\Documents\essential\programming_code\asp.mvc\Learn\Learn.ViewModel\obj\Debug\Learn.ViewModel.csprojResolveAssemblyReference.cache
