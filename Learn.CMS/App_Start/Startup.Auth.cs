@@ -5,9 +5,9 @@ using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Facebook;
 using Owin;
-using Learn.DataModel.Models;
-using Learn.Data;
-using Learn.Service.Manager;
+using Learn.Core.DataModels;
+using Learn.Core;
+using Learn.Core.Manager;
 
 namespace Learn.CMS
 {

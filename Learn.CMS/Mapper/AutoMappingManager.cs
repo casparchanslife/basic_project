@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
-using Learn.DataModel.Models;
-using Learn.ViewModel;
+using Learn.Core.DataModels;
+using Learn.Core.ViewModels;
 
 namespace Learn.CMS
 {

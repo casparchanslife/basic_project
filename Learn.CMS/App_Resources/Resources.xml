@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+	<resource culture="zh-CHT" region="TW" name="test" value="TW-CHT" />
+	<resource culture="zh-CHS" region="TW" name="test" value="TW-CHS" />
+	<resource culture="en-US" region="TW" name="test" value="TW-US" />
+	<resource culture="zh-CHT" region="CN" name="test" value="CN-CHT" />
+	<resource culture="zh-CHS" region="CN" name="test" value="CN-CHS" />
+	<resource culture="en-US" region="CN" name="test" value="CN-US" />
+	<resource culture="zh-CHT" region="HK" name="test" value="HK-CHT" />
+	<resource culture="zh-CHS" region="HK" name="test" value="HK-CHS" />
+	<resource culture="en-US" region="HK" name="test" value="HK-US" />
+</resources>

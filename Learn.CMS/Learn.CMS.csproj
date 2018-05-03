@@ -36,6 +36,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>AllFilesInProjectFolder</FilesToIncludeForPublish>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -215,6 +216,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Resources\Resources.cs" />
     <Compile Include="App_Start\AutofacConfig.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
@@ -230,6 +232,7 @@
     <Compile Include="Areas\News\Controllers\NotesController.cs" />
     <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Areas\Admin\Controllers\RolesController.cs" />
+    <Compile Include="Extensions\HTMLHelperExtensions.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -238,6 +241,7 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Resources\Resources.xml" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
@@ -399,6 +403,7 @@
     <Content Include="Views\Error\UnAuthorized.cshtml" />
     <Content Include="Areas\Admin\Views\Users\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Users\Edit.cshtml" />
+    <Content Include="Views\Home\Unauthorized.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -418,29 +423,9 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Learn.DataModel\Learn.DataModel.csproj">
-      <Project>{38F7FD3F-999F-4551-8E57-3DD05BA756AE}</Project>
-      <Name>Learn.DataModel</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Learn.Data\Learn.Data.csproj">
-      <Project>{E410E65F-3398-4D53-89B0-742379BFB294}</Project>
-      <Name>Learn.Data</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Learn.Lib\Learn.Lib.csproj">
-      <Project>{d788d939-330c-45e3-a1ae-086c183da0c2}</Project>
-      <Name>Learn.Lib</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Learn.Log\Learn.Log.csproj">
-      <Project>{8ec71ef5-414a-4874-96be-d5b1a240e04d}</Project>
-      <Name>Learn.Log</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Learn.Service\Learn.Service.csproj">
-      <Project>{9783090d-51f7-4b28-90d9-a7026ef82a6d}</Project>
-      <Name>Learn.Service</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Learn.ViewModel\Learn.ViewModel.csproj">
-      <Project>{8e3e9c61-5c98-4f2c-bc18-387a6c10ad72}</Project>
-      <Name>Learn.ViewModel</Name>
+    <ProjectReference Include="..\Learn.Core\Learn.Core.csproj">
+      <Project>{e410e65f-3398-4d53-89b0-742379bfb294}</Project>
+      <Name>Learn.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

@@ -17,8 +17,7 @@ namespace Learn.CMS.Areas.Admin
             context.MapRoute(
                 "Admin",
                 "Admin/{controller}/{action}/{id}",
-                new { action = "Index", id = UrlParameter.Optional },
-                namespaces: new[] { "Learn.CMS.Areas.Admin.Controllers" }
+                new { action = "Index", id = UrlParameter.Optional }
             );
         }
     }

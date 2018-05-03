@@ -3,10 +3,9 @@ using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
-using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
-using Learn.Service.Manager;
-using Learn.ViewModel;
+using Learn.Core.Manager;
+using Learn.Core.ViewModels;
 
 namespace Learn.CMS.Areas.Admin.Controllers
 {

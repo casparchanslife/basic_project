@@ -1,4 +1,9 @@
-﻿<!DOCTYPE html>
+﻿@{ 
+    var routeValues = this.ViewContext.RouteData.Values;
+    var controller = routeValues["controller"] as string;
+    var action = routeValues["action"] as string;
+}
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -21,12 +26,17 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home", new { Area = "" },null)</li>
-                    <li>@Html.ActionLink("Notes", "Index", "Notes", new { Area = "News" },null)</li>
+                    <li>@Html.ActionLink("Home", "Index", "Home", new { Area = "" }, null)</li>
+                    <li>@Html.ActionLink("Notes", "Index", "Notes", new { Area = "News" }, null)</li>
                     <li>@Html.ActionLink("Roles", "Index", "Roles", new { Area = "Admin" }, null)</li>
                     <li>@Html.ActionLink("Users", "Index", "Users", new { Area = "Admin" }, null)</li>
                 </ul>
-                @Html.Partial("_LoginPartial")
+                <ul class="nav navbar-nav navbar-right">
+                    @Html.Partial("_LoginPartial")
+                    <li>@Html.ActionLink("TC", action, controller, new { culture = "tc" , region = "hk"}, new { rel = "alternate", hreflang = "nl" })</li>
+                    <li>@Html.ActionLink("EN", action, controller, new { culture = "en", region = "hk" }, new { rel = "alternate", hreflang = "nl" })</li>
+                    <li>@Html.ActionLink("SC", action, controller, new { culture = "sc", region = "hk" }, new { rel = "alternate", hreflang = "nl" })</li>
+                </ul>
             </div>
         </div>
     </div>

@@ -1,15 +1,14 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
-using Learn.DataModel.Models;
-using Learn.Service.Manager;
-using Learn.ViewModel;
+using Learn.Core.DataModels;
+using Learn.Core.Manager;
 using Learn.CMS.Controllers;
+using Learn.Core.ViewModels;
 
 namespace Learn.CMS.Areas.Admin.Controllers
 {
@@ -421,7 +420,7 @@ namespace Learn.CMS.Areas.Admin.Controllers
             {
                 return Redirect(returnUrl);
             }
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Index", "Home",new { Area = ""});
         }
 
         internal class ChallengeResult : HttpUnauthorizedResult

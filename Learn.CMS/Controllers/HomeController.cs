@@ -14,5 +14,11 @@ namespace Learn.CMS.Controllers
         {
             return View();
         }
+
+
+        public ActionResult Unauthorized()
+        {
+            return View();
+        }
     }
 }

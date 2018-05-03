@@ -1,19 +1,16 @@
-﻿using AutoMapper;
-using Learn.Lib;
-using Learn.Lib.Extensions;
-using Learn.DataModel.Models;
-using Learn.CMS.Service.Services;
+﻿using Learn.Core;
+using Learn.Core.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Web.Mvc;
-using Learn.Service;
-using Learn.lib.Attributes;
 using Learn.CMS.Controllers;
-using Learn.ViewModel;
+using Learn.Core.Services;
+using Learn.Core.Attributes;
+using Learn.Core.ViewModels;
+using Learn.Core.DataEnum;
 
 namespace Learn.CMS.Areas.News.Controllers
 {
-    [CustomAuthorize(Roles =" Writter")]
     public class NotesController : BaseController
     {
         private readonly INoteService noteService;
@@ -25,20 +22,24 @@ namespace Learn.CMS.Areas.News.Controllers
             this.ApplicationUserService = applicationUserService;
         }
 
+        [HttpGet]
+        [AuthorizeUser(accessLevel = AccessLevelType.Read, functionID = FunctionIDs.NotesgMgt)]
         public ActionResult Index()
         {
             var notes = noteService.GetNotes();
             return View(notes);
         }
 
-
+        [HttpGet]
+        [AuthorizeUser(accessLevel = AccessLevelType.Insert, functionID = FunctionIDs.NotesgMgt)]
         public ActionResult Create()
         {
             return View(new NoteViewModel());
         }
 
         [HttpPost]
-        public  ActionResult Create(NoteViewModel model)
+        [AuthorizeUser(accessLevel = AccessLevelType.Insert, functionID = FunctionIDs.NotesgMgt)]
+        public ActionResult Create(NoteViewModel model)
         {
             IEnumerable<ValidationResult> errors = noteService.CanAddNote(model);
             if (ModelState.IsValid)
@@ -53,6 +54,8 @@ namespace Learn.CMS.Areas.News.Controllers
             return View("Create", model);
         }
 
+        [HttpGet]
+        [AuthorizeUser(accessLevel = AccessLevelType.Update, functionID = FunctionIDs.NotesgMgt)]
         public ActionResult Edit(string id)
         {
             var model = noteService.GetNote(Guid.Parse(id));
@@ -64,6 +67,7 @@ namespace Learn.CMS.Areas.News.Controllers
         }
 
         [HttpPost]
+        [AuthorizeUser(accessLevel = AccessLevelType.Update, functionID = FunctionIDs.NotesgMgt)]
         public ActionResult Edit(NoteViewModel model)
         {
             IEnumerable<ValidationResult> errors = noteService.CanAddNote(model);
@@ -79,6 +83,8 @@ namespace Learn.CMS.Areas.News.Controllers
             return View(model);
         }
 
+        [HttpGet]
+        [AuthorizeUser(accessLevel = AccessLevelType.Delete, functionID = FunctionIDs.NotesgMgt)]
         public ActionResult Delete(string id)
         {
             var model = noteService.GetNote(Guid.Parse(id));
@@ -90,6 +96,7 @@ namespace Learn.CMS.Areas.News.Controllers
         }
 
         [HttpPost, ActionName("Delete")]
+        [AuthorizeUser(accessLevel = AccessLevelType.Delete, functionID = FunctionIDs.NotesgMgt)]
         public ActionResult DeleteConfirmed(string id)
         {
             var model = noteService.GetNote(Guid.Parse(id));

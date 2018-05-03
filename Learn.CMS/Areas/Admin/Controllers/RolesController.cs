@@ -1,14 +1,9 @@
-﻿using Learn.DataModel.Models;
-using Learn.lib.Attributes;
-using System.Collections.Generic;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using System.Web.Mvc;
-using System.Linq;
-using AutoMapper;
-using Learn.Service.Manager;
-using Learn.ViewModel;
 using Learn.CMS.Controllers;
-using Learn.Service;
+using Learn.Core.ViewModels;
+using Learn.Core.Services;
+using System.Collections.Generic;
 
 namespace Learn.CMS.Areas.Admin.Controllers
 {

@@ -17,8 +17,7 @@ namespace Learn.CMS.Areas.News
             context.MapRoute(
                 "News",
                 "News/{controller}/{action}/{id}",
-                new {action = "Index", id = UrlParameter.Optional },
-                namespaces: new[] { "Learn.CMS.Areas.News.Controllers" }
+                new {action = "Index", id = UrlParameter.Optional }
             );
         }
     }
